@@ -1,22 +1,78 @@
 {
-  "generator-fountain-angular1": {
-    "version": "0.5.4",
+  "generator-gulp-angular": {
+    "version": "1.1.1",
     "props": {
-      "framework": "angular1",
-      "modules": "inject",
-      "js": "js",
-      "css": "scss",
-      "resolved": "/home/david/.nvm/versions/node/v4.4.1/lib/node_modules/generator-fountain-webapp/node_modules/generator-fountain-angular1/generators/app/index.js",
-      "namespace": "fountain-angular1",
-      "argv": {
-        "remain": [],
-        "cooked": [],
-        "original": []
+      "angularVersion": "~1.5.3",
+      "angularModules": [
+        {
+          "key": "animate",
+          "module": "ngAnimate"
+        },
+        {
+          "key": "cookies",
+          "module": "ngCookies"
+        },
+        {
+          "key": "touch",
+          "module": "ngTouch"
+        },
+        {
+          "key": "sanitize",
+          "module": "ngSanitize"
+        },
+        {
+          "key": "messages",
+          "module": "ngMessages"
+        },
+        {
+          "key": "aria",
+          "module": "ngAria"
+        }
+      ],
+      "jQuery": {
+        "key": "jqLite"
       },
-      "skip-cache": false,
-      "skip-install": false,
-      "sample": "todoMVC",
-      "router": "uirouter"
+      "resource": {
+        "key": "$http",
+        "module": null
+      },
+      "router": {
+        "key": "ui-router",
+        "module": "ui.router"
+      },
+      "ui": {
+        "key": "bootstrap",
+        "module": null
+      },
+      "bootstrapComponents": {
+        "key": "ui-bootstrap",
+        "module": "ui.bootstrap"
+      },
+      "cssPreprocessor": {
+        "key": "node-sass",
+        "extension": "scss"
+      },
+      "jsPreprocessor": {
+        "key": "noJsPrepro",
+        "extension": "js",
+        "srcExtension": "js"
+      },
+      "htmlPreprocessor": {
+        "key": "jade",
+        "extension": "jade"
+      },
+      "foundationComponents": {
+        "name": null,
+        "version": null,
+        "key": null,
+        "module": null
+      },
+      "paths": {
+        "src": "src",
+        "dist": "dist",
+        "e2e": "e2e",
+        "tmp": ".tmp"
+      }
     }
   }
 }
