@@ -15,8 +15,8 @@ gulp.task('watch', ['markups', 'inject'], function () {
   gulp.watch([path.join(conf.paths.src, '/*.html'), 'bower.json'], ['inject-reload']);
 
   gulp.watch([
-    path.join(conf.paths.src, '/styles/**/*.css'),
-    path.join(conf.paths.src, '/styles/**/*.scss') //CHANGE WHEN STYLES FOLDER IS CREATED
+    path.join(conf.paths.src, '/app/**/*.css'),
+    path.join(conf.paths.src, '/app/**/*.scss')
   ], function(event) {
     if(isOnlyChange(event)) {
       gulp.start('styles-reload');
@@ -25,7 +25,7 @@ gulp.task('watch', ['markups', 'inject'], function () {
     }
   });
 
-  gulp.watch(path.join(conf.paths.src, '/js/**/*.js'), function(event) {
+  gulp.watch(path.join(conf.paths.src, '/app/**/*.js'), function(event) {
     if(isOnlyChange(event)) {
       gulp.start('scripts-reload');
     } else {
@@ -33,9 +33,9 @@ gulp.task('watch', ['markups', 'inject'], function () {
     }
   });
 
-  gulp.watch(path.join(conf.paths.src, '/jade/**/*.jade'), ['markups']);
+  gulp.watch(path.join(conf.paths.src, '/app/**/*.jade'), ['markups']);
 
-  gulp.watch(path.join(conf.paths.src, '/jade/**/*.html'), function(event) {
+  gulp.watch(path.join(conf.paths.src, '/app/**/*.html'), function(event) {
     browserSync.reload(event.path);
   });
 });
