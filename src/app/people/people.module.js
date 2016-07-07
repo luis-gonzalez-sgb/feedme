@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('feedme.people');
+    .module('feedme.people', []);
 
 })();
