@@ -14,11 +14,11 @@
 		'ngAria',
 		'ui.router',
 		'ui.bootstrap',
-		'toastr'
+		'toastr',
 
 		//App modules
 
-		//'feedme.people'
+		'feedme.people'
 
     ]);
 

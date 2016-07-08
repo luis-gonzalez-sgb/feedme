@@ -7,9 +7,9 @@
 
     function PeopleController($log){
 		
-		$log.debug("PeopleController");
+      $log.debug("PeopleController");
 
-	}
+    }
 
 	PeopleController.$inject = [
 		'$log'
